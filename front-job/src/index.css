@@ -1,0 +1,208 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Styling for the JobForm component */
+.job-form {
+ 
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input, .form-textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-input:focus, .form-textarea:focus {
+  border-color: #007bff;
+}
+
+.form-textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.form-submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Container for the list of job cards */
+.job-list-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Heading for the job list */
+.job-list-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Container for job cards */
+.job-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual job card */
+.job-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for job cards */
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Job title */
+.job-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Job info (company, location, salary) */
+.job-info {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Button container */
+.job-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit button */
+.edit-btn {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button hover */
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 8px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Delete button hover */
+.delete-btn:hover {
+  background-color: #c82333;
+}
